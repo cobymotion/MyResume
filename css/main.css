@@ -239,3 +239,96 @@ a{
     height: auto;
     
 }
+
+/* Media Queries para diseño responsive */
+@media screen and (max-width: 768px) {
+    #main_container {
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+
+    aside {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .content {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #photo {
+        height: 150px;
+    }
+
+    .section_resume {
+        height: 60px;
+    }
+
+    .sectionIcon {
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .title_section h1 {
+        margin-left: 80px;
+        font-size: 1.5rem;
+    }
+
+    #education_columns, #work_columns {
+        grid-template-columns: 1fr;
+    }
+
+    .education_dates, .work_dates {
+        grid-column: 1;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .education_school, .work_space {
+        grid-column: 1;
+        margin-left: 20px;
+    }
+
+    .spacer {
+        display: none;
+    }
+
+    #badges {
+        flex-wrap: wrap;
+    }
+
+    #badges img {
+        width: 80px;
+        margin: 5px;
+    }
+
+    .regularText {
+        padding: 10px 20px;
+    }
+}
+
+/* Para pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+    #myName {
+        font-size: 1.5rem;
+    }
+
+    #profession {
+        font-size: 0.9rem;
+    }
+
+    .title_section h1 {
+        font-size: 1.2rem;
+    }
+
+    #photo {
+        height: 120px;
+    }
+
+    .education_school h3, .work_space h3 {
+        font-size: 1.1rem;
+    }
+}
